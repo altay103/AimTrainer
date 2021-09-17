@@ -1,2 +1,2 @@
-# AimTraniner
+# AimTrainer
 nice game ever
