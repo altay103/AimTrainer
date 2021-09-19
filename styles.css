@@ -19,13 +19,22 @@ header {
   padding: 0px;
 }
 
-.scores{
+.borderedDiv{
     border: 3px solid #73AD21;
     width: 150px;
-    height: 80px;
-    text-align: left;
+    height: 50px;
+    text-align: center;
 }
 
+.hlist { 
+  display: flex;
+ }
+
+.hlist li { 
+  list-style-type: none; 
+  padding-top: 20px;
+  padding-right: 80px;
+} 
 
 .main-nav {
   height: 90px;
@@ -126,6 +135,15 @@ li a.contact:hover {
   }
 }
 
+#headerLi{
+  padding-left: 310px;
+  text-align: center;
+}
+
+#gameHeader{
+  color: white;
+}
+
 #startButton{
     width: 10%;
     height: 20%;
@@ -139,10 +157,11 @@ li a.contact:hover {
 
 #aimButton{
     background-image: url(terrorist.png);
-    background-color: null;
+    background-color: transparent;
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
+    border-color: transparent;
 }
 
 #scoreHeader{
