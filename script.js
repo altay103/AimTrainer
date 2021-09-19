@@ -29,8 +29,8 @@ window.onload = function () {
         var y=Math.floor((Math.random()*1000)%height);
 
         console.log(x+" , "+y);
-        aimButton.style.left=x;
-        aimButton.style.top=y;
+        aimButton.style.left=x+'px';
+        aimButton.style.top=y+'px';
     }
 
     function startTimer () {
