@@ -137,6 +137,15 @@ li a.contact:hover {
     font-size: large;
 }
 
+#aimButton{
+    background-image: url(terrorist.png);
+    background-color: null;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 500px;
+}
+
 #scoreHeader{
     color: whitesmoke;
 }
