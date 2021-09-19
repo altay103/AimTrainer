@@ -22,7 +22,15 @@ window.onload = function () {
 
     aimButton.onclick =function(){
         score++;
-        //
+        var width =window.innerWidth;
+        var height=window.innerHeight;
+        
+        var x=Math.floor((Math.random()*1000)%width);
+        var y=Math.floor((Math.random()*1000)%height);
+
+        console.log(x+" , "+y);
+        aimButton.style.left=x+'px';
+        aimButton.style.top=y+'px';
     }
 
     function startTimer () {
