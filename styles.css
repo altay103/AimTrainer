@@ -5,26 +5,27 @@
   src: url(/fonts/AstroSpace.ttf);
 }
 
-#startButton{
-    width: 10%;
-    height: 20%;
-    background-color: wheat;
-    color: cornflowerblue;
-    left: 45%;
-    top: 40%;
-    position: absolute;
-    font-size: large;
-}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
   background-image: url(https://www.cswarzone.com/wp-content/uploads/2019/06/De_dust2_new_v4-1920x1080.jpg);
+  background-size: 100%;
 }
 
 header {
   background-color: #141b25;
+  padding: 0px;
 }
+
+.scores{
+    border: 3px solid #73AD21;
+    width: 150px;
+    height: 80px;
+    text-align: left;
+}
+
 
 .main-nav {
   height: 90px;
@@ -123,6 +124,25 @@ li a.contact:hover {
   #isChecked:checked ~ .navlinks {
     right: 0;
   }
+}
+
+#startButton{
+    width: 10%;
+    height: 20%;
+    background-color: wheat;
+    color: cornflowerblue;
+    left: 45%;
+    top: 40%;
+    position: absolute;
+    font-size: large;
+}
+
+#scoreHeader{
+    color: whitesmoke;
+}
+
+#timer{
+    color: tomato;
 }
 
 @media (max-width: 350px) {
