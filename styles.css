@@ -154,8 +154,6 @@ li a.contact:hover {
     color: tomato;
 }
 
-
-
 @media (max-width: 350px) {
   .logo {
     margin-left: 15px;
