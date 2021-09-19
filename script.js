@@ -1,27 +1,35 @@
 window.onload = function () {
     var startButton=document.getElementById("startButton");
     var aimButton=document.getElementById("aimButton");
+    var scoreHeader=document.getElementById("scoreHeader");
+    var timeHeader=document.getElementById("timer");
     var Interval ;
     var counter=0;
-    var time;
+    
     var score;
     //start buton açma
     startButton.style.visibility='visible';
     //aim button gizleme 
     aimButton.style.visibility='hidden';
+    //score hazırlama
+    scoreHeader.innerHTML='Score: '+0;
+    //timer hazırlama
+    timeHeader.innerHTML='Timer: '+0;
 
     startButton.onclick = function(){
-        time=5;
+        time=500;
+        timeHeader.innerHTML='Timer: '+time;
         score=0;
         startButton.style.visibility='hidden';
         aimButton.style.visibility='visible';
         clearInterval(Interval);
-        Interval = setInterval(startTimer, 1000);
+        Interval = setInterval(startTimer, 10);
         
     }
 
     aimButton.onclick =function(){
         score++;
+        scoreHeader.innerHTML='Score: '+score;
         var width =window.innerWidth;
         var height=window.innerHeight;
         
@@ -35,6 +43,7 @@ window.onload = function () {
 
     function startTimer () {
         time--; 
+        timeHeader.innerHTML='Timer: '+time;
         if(time<=0){
             clearInterval(Interval);
             alert("Time Over"+"\nScore:"+score);
